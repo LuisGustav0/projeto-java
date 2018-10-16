@@ -1,0 +1,216 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.atentatecnologia</groupId>
+	<artifactId>avaliacao-atenta-tecnologia</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<packaging>war</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+
+		<java.version>1.8</java.version>
+		<maven-compiler-pluging.version>3.2</maven-compiler-pluging.version>
+
+		<!-- Núcleo do Hibernate -->
+		<org.hibernate.version>4.2.3.Final</org.hibernate.version>
+
+		<!-- MySQL Driver -->
+		<mysql.version>5.1.25</mysql.version>
+
+		<!-- Tema do Bootstrap -->
+		<org.primefaces.themes.verison>1.0.10</org.primefaces.themes.verison>
+
+		<!-- Mojarra (implementação do JSF 2) -->
+		<org.glassfish.version>2.2.13</org.glassfish.version>
+
+		<!-- PrimeFaces (biblioteca de componentes) -->
+		<org.primefaces.version>6.1</org.primefaces.version>
+
+		<!-- Weld (implementação do CDI) -->
+		<org.jboss.weld.version>2.2.9.Final</org.jboss.weld.version>
+
+		<!-- Weld depende do Jandex -->
+		<org.jboss.jandex.version>1.2.2.Final</org.jboss.jandex.version>
+
+		<!-- OmniFaces (utilitarios para JSF) -->
+		<org.omnifaces.verion>2.5.1</org.omnifaces.verion>
+
+		<!-- Xmlbeans (Exports p/ XML) -->
+		<org.apache.xmlbeans.version>2.6.0</org.apache.xmlbeans.version>
+		
+		<!-- Spring Security (autenticação e autorização) -->
+		<org.springframework.security.version>4.1.3.RELEASE</org.springframework.security.version>
+		
+		<!-- Api de Servlet -->
+		<javax.servlet.version>3.1.0</javax.servlet.version>
+		
+		<!-- Log4J -->
+		<log4j.version>1.2.17</log4j.version>
+		
+		<!-- Commons Logging (abstrai a implementação de logging) -->
+		<commons.logging.version>1.1.3</commons.logging.version>
+		
+		<!-- Commons Lang (utilidades) -->
+		<org.apache.commons.version>3.1</org.apache.commons.version>
+	</properties>
+
+	<dependencies>
+		<!-- Núcleo do Hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${org.hibernate.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Implementação de EntityManager da JPA -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${org.hibernate.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Driver JDBC do MySQL -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Tema do Bootstrap -->
+		<dependency>
+			<groupId>org.primefaces.themes</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>${org.primefaces.themes.verison}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Mojarra (implementação do JSF 2) -->
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.faces</artifactId>
+			<version>${org.glassfish.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- PrimeFaces (biblioteca de componentes) -->
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>${org.primefaces.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Weld (implementação do CDI) -->
+		<dependency>
+			<groupId>org.jboss.weld.servlet</groupId>
+			<artifactId>weld-servlet</artifactId>
+			<version>${org.jboss.weld.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Weld depende do Jandex -->
+		<dependency>
+			<groupId>org.jboss</groupId>
+			<artifactId>jandex</artifactId>
+			<version>${org.jboss.jandex.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- OmniFaces (utilitarios para JSF) -->
+		<dependency>
+			<groupId>org.omnifaces</groupId>
+			<artifactId>omnifaces</artifactId>
+			<version>${org.omnifaces.verion}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Xmlbeans (Exports p/ XML) -->
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>${org.apache.xmlbeans.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		
+		<!-- Log4J -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Commons Logging (abstrai a implementação de logging) -->
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>${commons.logging.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Commons Lang (utilidades) -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${org.apache.commons.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Spring Security (autenticação e autorização) -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${org.springframework.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${org.springframework.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${org.springframework.security.version}</version>
+		</dependency>
+		
+		<!-- API de Servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${javax.servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-pluging.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>prime-repo</id>
+			<name>PrimeFaces Maven Repository</name>
+			<url>http://repository.primefaces.org</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+</project>

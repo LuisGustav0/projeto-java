@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Compra no supermercado</title>
+	<style type="text/css">
+.ui-widget {
+	font-size: 90%;
+}
+</style>
+</h:head>
+<h:body>
+	<f:metadata>
+   		<f:viewAction action="#{compraViewCtrl.iniciarVariaveis}" />
+   	</f:metadata>
+
+	<div class="ui-fluid">
+	 	
+	 	<p:messages autoUpdate="true" closable="true" />
+	 	
+		<h:form>
+			<p:panelGrid id="painel"
+						 columns="2"  
+						 style="width: 100%;"
+	    				 columnClasses="rotulo, campo">					 
+				<p:outputLabel for="codigo" 
+							   value="Geladeira:"/>
+		        <p:inputText id="codigo" 
+		        			 disabled="true"
+		        			 style="width: 20%;"
+		        			 value="#{compraViewCtrl.itemGeladeiraTO.geladeiraTO.codigo}"/>
+		 
+		 		<p:outputLabel for="data" 
+	    					   value="Data:" />
+        		<p:calendar id="data" 
+        					mask="true" 
+        					pattern="dd/MM/yyyy"
+        					disabled="true"
+        					value="#{compraViewCtrl.itemGeladeiraTO.data}"/>
+        					
+        		 <p:outputLabel for="mercado" 
+        		 				value="Mercado:"/>
+	    		<p:selectOneMenu id="mercado" 
+	    						 value="#{compraViewCtrl.itemGeladeiraTO.mercadoTO}">
+	    			<f:selectItem itemLabel="Selecione uma mercado"/>
+	    			<f:selectItems var="mercadoTO"
+	    						   value="#{compraViewCtrl.mercados}"
+	    						   itemLabel="#{mercadoTO.nome}"  
+	    						   itemValue="#{mercadoTO}"/>
+	    		</p:selectOneMenu>			
+			</p:panelGrid>
+			
+			<p:dataTable id="dtProdutos" 
+						 var="produtoTO" 
+						 value="#{compraViewCtrl.produtos}" 
+						 selection="#{compraViewCtrl.produtosCompra}" 
+						 rowKey="#{produtoTO.codigo}" 
+						 style="margin-bottom:0">
+		        <f:facet name="header">
+		            Lista de produtos do mercado
+		        </f:facet>
+		        <p:column selectionMode="multiple" style="width:16px;text-align:center"/>
+		        <p:column headerText="Código">
+		            <h:outputText value="#{produtoTO.codigo}" />
+		        </p:column>
+		        
+		        <p:column headerText="Nome">
+		            <h:outputText value="#{produtoTO.nome}" />
+		        </p:column>
+		        
+		        <p:column headerText="Marca">
+		            <h:outputText value="#{produtoTO.marcaTO.nome}" />
+		        </p:column>
+		        
+		        <p:column headerText="Tipo de produto">
+		            <h:outputText value="#{produtoTO.tipoProduto}" />
+		        </p:column>
+		        
+		        <p:column headerText="Valor">
+		            <h:outputText value="#{produtoTO.valor}" />
+		        </p:column>
+		        
+		        <p:column headerText="Data de validade">
+		            <h:outputText value="#{produtoTO.dataValidade}" />
+		        </p:column>
+		    </p:dataTable>
+			
+			<p:toolbar>
+        		<f:facet name="left">
+        		<p:commandButton value="Comprar"
+        						 actionListener="#{compraViewCtrl.onComprar}"
+        						 process="@form" 
+        						 update="@form">
+			    </p:commandButton>
+        		</f:facet>
+        	</p:toolbar>
+		</h:form>
+	</div>
+</h:body>
+</html>

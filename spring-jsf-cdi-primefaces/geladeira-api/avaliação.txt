@@ -1,0 +1,22 @@
+Instruções :
+	
+	1. Modelar o problema abaixo utilizando diagramas de classe e de seqüência onde você achar conveniente. 
+Os diagramas podem ser criados em qualquer ferramenta de modelagem, devendo ser entregues no formato original do 
+aplicativo usado e também como imagem ou pdf, se possível. 
+
+	2. Implementar os casos de uso utilizando na camada de visão JSP, Struts, Spring MVC ou JSF e na
+camada de dados HIBERNATE ou JDBC. 
+		a. Na avaliação, detalhes de layout da camada de visão não serão considerados. 
+		b. Sua forma de pensar e estruturar o projeto serão avaliados. 
+		c. Qualquer banco de dados pode ser usado. 
+		i. Driver: deve ser indicado o driver utilizado para que possamos fazer o download; 
+		ii. Deve ser fornecido o script para criação do banco de dados (caso seja necessário). 
+	
+	3. As tecnologias para uso no projeto, exceto especificado acima, podem ser escolhidas por você. Recomendamos o 
+uso do Spring Framework, do Maven e da IDE Eclipse, porém nenhuma dessas tecnologias é obrigatória. 
+	
+	4. Após finalizar o teste, você deverá enviá-lo em um arquivo zip para o endereço de e-mail
+bmendes@atentatecnologia.com.br com o assunto “Avaliação Técnica Java”. 
+	
+	5. Você será convidado a expor seu projeto, explicando suas escolhas de tecnologia, implementação e modelagem. 
+Tenha em mente que a exposição do projeto é a parte mais importante da avaliação. .
