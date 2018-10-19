@@ -1,8 +1,8 @@
-import { Component, OnInit, Output } from '@angular/core';
-import { EventEmitter } from 'protractor';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+
 import { VendaService } from './../venda.service';
 import { MessageService } from 'primeng/components/common/messageservice';
-import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-venda-cadastro',
@@ -15,8 +15,9 @@ export class VendaCadastroComponent implements OnInit {
   item: any;
   listaCliente: Array<any>;
   listaProduto: Array<any>;
-  @Output() vendaSalva = new EventEmitter();
 
+  @Output() vendaSalva = new EventEmitter();
+  
   constructor(
     private vendaService: VendaService,
     private messageService: MessageService) { }

@@ -15,10 +15,11 @@ import { PanelModule } from 'primeng/panel';
 import { ButtonModule } from 'primeng/button';
 import { GrowlModule } from 'primeng/growl';
 
+import { VendaService } from './venda/venda.service';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-import { VendaService } from './venda/venda.service';
 import { VendaPesquisaComponent } from './venda/venda-pesquisa/venda-pesquisa.component'
 import { VendaCadastroComponent } from './venda/venda-cadastro/venda-cadastro.component';
 
@@ -50,8 +51,8 @@ registerLocaleData(localePt);
       provide: LOCALE_ID, 
       useValue: 'pt' 
     },
-    VendaService,
-    MessageService
+    MessageService,
+    VendaService    
   ],
   bootstrap: [AppComponent]
 })

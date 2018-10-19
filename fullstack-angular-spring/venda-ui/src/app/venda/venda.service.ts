@@ -23,5 +23,4 @@ export class VendaService {
   listarProdutos(): Observable<any> {
     return this.http.get<any>(`${this.api}/produto`);
   }
-
 }
