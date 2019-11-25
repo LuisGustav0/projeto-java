@@ -1,4 +1,7 @@
 package com.unialfa.solid.isp.is_isp;
 
-public class Redondo {
+public interface Redondo extends Poligono {
+
+    void circunferencia();
+    void raio();
 }

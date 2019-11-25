@@ -1,20 +1,23 @@
-package com.unialfa.solid.dip.not_dip;
+package com.unialfa.solid.dip.is_dip;
 
 import java.math.BigDecimal;
 
-public class Pagamento {
+public class Pagamento implements Pagador {
 
-    private Funcionario funcionario;
+    private Pagavel pagavel;
 
+    @Override
+    public void setPagavel(Pagavel pagavel) {
+        this.pagavel = pagavel;
+    }
+
+    @Override
+    public String getNome() {
+        return this.pagavel.getNome();
+    }
+
+    @Override
     public BigDecimal getSalario() {
-        if ("FRONT-END".equals(funcionario.getCargo())) {
-
-        } else if ("BACK-END".equals(funcionario.getCargo())) {
-
-        } else if ("FULL-STACK".equals(funcionario.getCargo())) {
-
-        }
-
-        return funcionario.getComissao();
+        return this.pagavel.getRemuneracao();
     }
 }

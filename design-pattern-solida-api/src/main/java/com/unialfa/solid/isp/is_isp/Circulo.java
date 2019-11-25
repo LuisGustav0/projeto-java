@@ -1,15 +1,10 @@
-package com.unialfa.solid.isp.not_isp;
+package com.unialfa.solid.isp.is_isp;
 
-public class Circulo implements Poligono {
+public class Circulo implements Redondo {
 
     @Override
     public void area() {
         System.out.println("Area = ?");
-    }
-
-    @Override
-    public void perimetro() {
-        System.out.println("Perímetro = ?");
     }
 
     @Override

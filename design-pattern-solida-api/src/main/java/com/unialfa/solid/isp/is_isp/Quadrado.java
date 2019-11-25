@@ -1,6 +1,6 @@
-package com.unialfa.solid.isp.not_isp;
+package com.unialfa.solid.isp.is_isp;
 
-public class Quadrado implements Poligono {
+public class Quadrado implements NaoRedondo {
 
     @Override
     public void area() {
@@ -10,15 +10,5 @@ public class Quadrado implements Poligono {
     @Override
     public void perimetro() {
         System.out.println("Perímetro = ?");
-    }
-
-    @Override
-    public void circunferencia() {
-        System.out.println("Circunferencia = ?");
-    }
-
-    @Override
-    public void raio() {
-        System.out.println("Raio = ?");
     }
 }

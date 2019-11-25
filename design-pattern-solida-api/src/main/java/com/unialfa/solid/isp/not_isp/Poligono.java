@@ -1,4 +1,9 @@
 package com.unialfa.solid.isp.not_isp;
 
-public class Poligono {
+public interface Poligono {
+
+    void area();
+    void perimetro();
+    void circunferencia();
+    void raio();
 }

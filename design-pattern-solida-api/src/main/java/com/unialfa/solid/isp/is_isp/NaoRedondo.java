@@ -1,4 +1,6 @@
 package com.unialfa.solid.isp.is_isp;
 
-public class Redondo {
+public interface NaoRedondo extends Poligono {
+
+    void perimetro();
 }
