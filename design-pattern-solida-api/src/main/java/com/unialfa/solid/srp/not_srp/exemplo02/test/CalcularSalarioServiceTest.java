@@ -47,9 +47,22 @@ public class FuncionarioTest {
         calcularSalario(funcionario);
     }
 
+    private static void testeFuncionarioNaoExiste() {
+        try {
+            TipoCargoE tipoCargoE = null;
+
+            Funcionario funcionario = getFunconario(tipoCargoE, BigDecimal.valueOf(2200.0));
+
+            calcularSalario(funcionario);
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+    }
+
     public static void main(String[] args) {
         testeFuncionarioDesenvolvedor();
         testeFuncionarioDba();
         testeFuncionarioTester();
+        testeFuncionarioNaoExiste();
     }
 }
