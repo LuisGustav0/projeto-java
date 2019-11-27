@@ -28,14 +28,18 @@ public class GeradorDeNotaFiscalService {
                        .orElse(BigDecimal.ZERO);
     }
 
-    public NotaFiscal gera(Fatura fatura) {
+    public void onAfterGerarNotaFiscal(NotaFiscal notaFiscal) {
+        this.notaFiscalRepository.save(notaFiscal);
+        this.enviadorEmailService.enviar(notaFiscal);
+    }
+
+    public NotaFiscal gerar(Fatura fatura) {
         BigDecimal valor = getValorMensal(fatura);
         BigDecimal imposto = getImpostoSimplesSobreO(valor);
 
         NotaFiscal notaFiscal = new NotaFiscal(valor, imposto);
 
-        this.notaFiscalRepository.save(notaFiscal);
-        this.enviadorEmailService.enviar(notaFiscal);
+        onAfterGerarNotaFiscal(notaFiscal);
 
         return notaFiscal;
     }

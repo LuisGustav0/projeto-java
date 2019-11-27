@@ -6,7 +6,7 @@ import com.unialfa.util.UtilNumero;
 
 import java.math.BigDecimal;
 
-public class CalcularSalarioService {
+public class CalculadoraSalarioService {
 
     public BigDecimal calcula(Funcionario funcionario) {
         if (TipoCargoE.DESENVOLVEDOR.equals(funcionario.getCargo().getTipoCargoE())) {

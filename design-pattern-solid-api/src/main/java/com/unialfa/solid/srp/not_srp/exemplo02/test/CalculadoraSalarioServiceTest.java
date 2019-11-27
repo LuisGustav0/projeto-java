@@ -3,11 +3,11 @@ package com.unialfa.solid.srp.not_srp.exemplo02.test;
 import com.unialfa.solid.srp.not_srp.exemplo02.enums.TipoCargoE;
 import com.unialfa.solid.srp.not_srp.exemplo02.model.Cargo;
 import com.unialfa.solid.srp.not_srp.exemplo02.model.Funcionario;
-import com.unialfa.solid.srp.not_srp.exemplo02.service.CalcularSalarioService;
+import com.unialfa.solid.srp.not_srp.exemplo02.service.CalculadoraSalarioService;
 
 import java.math.BigDecimal;
 
-public class CalcularSalarioServiceTest {
+public class CalculadoraSalarioServiceTest {
 
     private static Funcionario getFunconario(TipoCargoE tipoCargoE,
                                              BigDecimal salarioBase) {
@@ -22,7 +22,7 @@ public class CalcularSalarioServiceTest {
     }
 
     private static void calcularSalario(Funcionario funcionario) {
-        CalcularSalarioService calculadoraDeSalario = new CalcularSalarioService();
+        CalculadoraSalarioService calculadoraDeSalario = new CalculadoraSalarioService();
         BigDecimal valorSalario = calculadoraDeSalario.calcula(funcionario);
 
         System.out.println(funcionario.getCargo().getTipoCargoE() + ": " + valorSalario);

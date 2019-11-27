@@ -1,4 +1,4 @@
-package com.unialfa.solid.dip.not_dip;
+package com.unialfa.solid.dip.not_dip.exemplo01;
 
 import lombok.Getter;
 import lombok.Setter;

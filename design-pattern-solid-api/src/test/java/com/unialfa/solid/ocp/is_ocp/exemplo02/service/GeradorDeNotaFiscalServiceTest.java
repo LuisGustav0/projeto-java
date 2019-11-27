@@ -20,6 +20,6 @@ public class GeradorDeNotaFiscalServiceTest {
         fatura.setCliente("Luis Gustavo");
         fatura.setValorMensal(BigDecimal.valueOf(1600.0));
 
-        this.geradorDeNotaFiscalService.gera(fatura);
+        this.geradorDeNotaFiscalService.gerar(fatura);
     }
 }

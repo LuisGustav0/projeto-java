@@ -7,9 +7,9 @@ import com.unialfa.solid.srp.is_srp.exemplo02.model.Funcionario;
 import java.math.BigDecimal;
 import java.util.Optional;
 
-public class CalcularSalarioService {
+public class CalculadoraSalarioService {
 
-    public BigDecimal calcula(Funcionario funcionario) {
+    public BigDecimal calcular(Funcionario funcionario) {
         TipoCargoE tipoCargoE = Optional.ofNullable(funcionario)
                                         .map(Funcionario::getCargo)
                                         .map(Cargo::getTipoCargoE)
