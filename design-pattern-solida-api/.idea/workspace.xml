@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae7e3f95-e1b5-436d-a237-a1a2e7c76774" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/DesignPatternSolidaApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/dip/is_dip/Funcionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/dip/is_dip/Pagador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/dip/is_dip/Pagamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/dip/is_dip/PagamentoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/dip/is_dip/Pagavel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/dip/is_dip/ServicoPagamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/dip/not_dip/Funcionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/dip/not_dip/Pagamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/dip/not_dip/PagamentoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/isp/is_isp/Circulo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/isp/is_isp/NaoRedondo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/isp/is_isp/Poligono.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/isp/is_isp/Quadrado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/isp/is_isp/Redondo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/isp/not_isp/Circulo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/isp/not_isp/Poligono.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/isp/not_isp/Quadrado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/lsp/is_lsp/Arquivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/lsp/is_lsp/ArquivoEscrever.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/lsp/is_lsp/ArquivoLer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/lsp/is_lsp/ArquivoSomenteLeitura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/lsp/is_lsp/ArquivoTxt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/lsp/is_lsp/GerarArquivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/lsp/not_lsp/Arquivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/lsp/not_lsp/ArquivoSomenteLeitura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/lsp/not_lsp/ArquivoTxt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/lsp/not_lsp/GerarArquivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/is_ocp/exemplo01/Arquivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/is_ocp/exemplo01/ArquivoPDF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/is_ocp/exemplo01/ArquivoWord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/is_ocp/exemplo01/GerarArquivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/is_ocp/exemplo02/interfaces/INotaFiscalAfterService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/is_ocp/exemplo02/model/Fatura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/is_ocp/exemplo02/model/NotaFiscal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/is_ocp/exemplo02/repository/NotaFiscalRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/is_ocp/exemplo02/services/EnviadorEmailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/is_ocp/exemplo02/services/GeradorDeNotaFiscalService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/is_ocp/exemplo02/test/GeradorDeNotaFiscalServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/not_ocp/exemplo01/Arquivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/not_ocp/exemplo01/ArquivoPDF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/not_ocp/exemplo01/ArquivoWord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/not_ocp/exemplo01/GerarArquivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/not_ocp/exemplo02/dao/NotaFiscalDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/not_ocp/exemplo02/model/Fatura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/not_ocp/exemplo02/model/NotaFiscal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/not_ocp/exemplo02/services/EnviadorDeEmail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/not_ocp/exemplo02/services/GeradorDeNotaFiscal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/ocp/not_ocp/exemplo02/test/GeradorDeNotaFiscalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/is_srp/exemplo01/EmailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/is_srp/exemplo01/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/is_srp/exemplo02/enums/TipoCargoE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/is_srp/exemplo02/interfaces/IRegraDeCalculo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/is_srp/exemplo02/model/Cargo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/is_srp/exemplo02/model/Funcionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/is_srp/exemplo02/service/CalcularSalarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/is_srp/exemplo02/service/DezOuVintePorcentoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/is_srp/exemplo02/service/QuinzeOuVinteECincoPorCentoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/is_srp/exemplo02/test/CalcularSalarioServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/not_srp/exemplo01/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/not_srp/exemplo02/enums/TipoCargoE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/not_srp/exemplo02/model/Cargo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/not_srp/exemplo02/model/Funcionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/not_srp/exemplo02/service/CalcularSalarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/solid/srp/not_srp/exemplo02/test/CalcularSalarioServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unialfa/util/UtilNumero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/unialfa/solid/DesignPatternSolidaApiApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1U701ejnhX8H9WNl2P9JpVKpYF0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../design-pattern-solid-api" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.unialfa.solid.ocp.not_ocp.exemplo02.services" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.unialfa" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.unialfa.solid.ocp.is_ocp.exemplo02.test" />
+      <recent name="com.unialfa.solid.dip.is_dip" />
+      <recent name="com.unialfa.solid.isp.is_isp" />
+      <recent name="com.unialfa.solid.lsp.is_lsp" />
+      <recent name="com.unialfa.solid.lsp.not_lsp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desenvolvimento\git\public\projeto-java\design-pattern-solida-api\src\main\java\com\unialfa\solid\ocp\not_ocp\exemplo02\model" />
+      <recent name="D:\Desenvolvimento\git\public\projeto-java\design-pattern-solida-api\src\main\java\com\unialfa\solid\ocp\not_ocp\exemplo02" />
+      <recent name="D:\Desenvolvimento\git\public\projeto-java\design-pattern-solida-api\src\main\java\com\unialfa\solid\srp\is_srp\exemplo02" />
+      <recent name="D:\Desenvolvimento\git\public\projeto-java\design-pattern-solida-api\src\main\java\com\unialfa\solid\dip\is_dip" />
+      <recent name="D:\Desenvolvimento\git\public\projeto-java\design-pattern-solida-api\src\main\java\com\unialfa\solid\isp\is_isp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.GeradorDeNotaFiscalServiceTest">
+    <configuration name="CalcularSalarioServiceTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.unialfa.solid.srp.is_srp.exemplo02.test.CalcularSalarioServiceTest" />
+      <module name="design-pattern-solid-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.unialfa.solid.srp.is_srp.exemplo02.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalcularSalarioServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.unialfa.solid.srp.not_srp.exemplo02.test.CalcularSalarioServiceTest" />
+      <module name="design-pattern-solid-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.unialfa.solid.srp.not_srp.exemplo02.enums.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeradorDeNotaFiscalServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.unialfa.solid.ocp.is_ocp.exemplo02.test.GeradorDeNotaFiscalServiceTest" />
+      <module name="design-pattern-solid-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.unialfa.solid.ocp.is_ocp.exemplo02.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeradorDeNotaFiscalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.unialfa.solid.ocp.not_ocp.exemplo02.test.GeradorDeNotaFiscalTest" />
+      <module name="design-pattern-solid-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.unialfa.solid.ocp.not_ocp.exemplo02.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PagamentoTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.unialfa.solid.dip.is_dip.PagamentoTest" />
+      <module name="design-pattern-solid-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.unialfa.solid.dip.is_dip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DesignPatternSolidaApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="design-pattern-solid-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.unialfa.DesignPatternSolidaApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GeradorDeNotaFiscalServiceTest" />
+        <item itemvalue="Application.GeradorDeNotaFiscalTest" />
+        <item itemvalue="Application.CalcularSalarioServiceTest (1)" />
+        <item itemvalue="Application.CalcularSalarioServiceTest" />
+        <item itemvalue="Application.PagamentoTest (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae7e3f95-e1b5-436d-a237-a1a2e7c76774" name="Default Changelist" comment="" />
+      <created>1574692112167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574692112167</updated>
+      <workItem from="1574692113589" duration="15719000" />
+      <workItem from="1574773995690" duration="194000" />
+      <workItem from="1574774702374" duration="40000" />
+      <workItem from="1574774762191" duration="44000" />
+      <workItem from="1574795855334" duration="176000" />
+      <workItem from="1574809849372" duration="3018000" />
+      <workItem from="1574816828532" duration="10747000" />
+      <workItem from="1574856098402" duration="928000" />
+      <workItem from="1574858194115" duration="1262000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

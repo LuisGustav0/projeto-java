@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.unialfa</groupId>
-	<artifactId>design-pattern-solida-api</artifactId>
+	<artifactId>design-pattern-solid-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>design-pattern-solida-api</name>
+	<name>design-pattern-solid-api</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

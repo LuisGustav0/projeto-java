@@ -1,6 +1,6 @@
 package com.unialfa.solid.ocp.is_ocp.exemplo02.services;
 
-import com.unialfa.solid.ocp.is_ocp.exemplo02.interfaces.INotaFiscalAfterService;
+import com.unialfa.solid.ocp.is_ocp.exemplo02.interfaces.INotaFiscalGerarAfterService;
 import com.unialfa.solid.ocp.is_ocp.exemplo02.model.Fatura;
 import com.unialfa.solid.ocp.is_ocp.exemplo02.model.NotaFiscal;
 
@@ -10,9 +10,9 @@ import java.util.Optional;
 
 public class GeradorDeNotaFiscalService {
 
-    private List<INotaFiscalAfterService> listaAcaoAposGerarNota;
+    private List<INotaFiscalGerarAfterService> listaAcaoAposGerarNota;
 
-    public GeradorDeNotaFiscalService(List<INotaFiscalAfterService> listaAcaoAposGerarNota) {
+    public GeradorDeNotaFiscalService(List<INotaFiscalGerarAfterService> listaAcaoAposGerarNota) {
         this.listaAcaoAposGerarNota = listaAcaoAposGerarNota;
     }
 

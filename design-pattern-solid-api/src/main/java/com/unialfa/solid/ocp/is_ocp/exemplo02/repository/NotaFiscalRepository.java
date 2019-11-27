@@ -1,9 +1,9 @@
 package com.unialfa.solid.ocp.is_ocp.exemplo02.repository;
 
-import com.unialfa.solid.ocp.is_ocp.exemplo02.interfaces.INotaFiscalAfterService;
+import com.unialfa.solid.ocp.is_ocp.exemplo02.interfaces.INotaFiscalGerarAfterService;
 import com.unialfa.solid.ocp.is_ocp.exemplo02.model.NotaFiscal;
 
-public class NotaFiscalRepository implements INotaFiscalAfterService {
+public class NotaFiscalRepository implements INotaFiscalGerarAfterService {
 
     @Override
     public void executa(NotaFiscal notaFiscal) {

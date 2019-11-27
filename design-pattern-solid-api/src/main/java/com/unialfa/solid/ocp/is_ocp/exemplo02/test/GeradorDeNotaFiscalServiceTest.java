@@ -1,6 +1,6 @@
 package com.unialfa.solid.ocp.is_ocp.exemplo02.test;
 
-import com.unialfa.solid.ocp.is_ocp.exemplo02.interfaces.INotaFiscalAfterService;
+import com.unialfa.solid.ocp.is_ocp.exemplo02.interfaces.INotaFiscalGerarAfterService;
 import com.unialfa.solid.ocp.is_ocp.exemplo02.model.Fatura;
 import com.unialfa.solid.ocp.is_ocp.exemplo02.repository.NotaFiscalRepository;
 import com.unialfa.solid.ocp.is_ocp.exemplo02.services.EnviadorEmailService;
@@ -20,13 +20,12 @@ public class GeradorDeNotaFiscalServiceTest {
         NotaFiscalRepository notaFiscalRepository = new NotaFiscalRepository();
         EnviadorEmailService enviadorEmailService = new EnviadorEmailService();
 
-        List<INotaFiscalAfterService> listaNotaFiscalAfterService = Arrays.asList(
+        List<INotaFiscalGerarAfterService> listaNotaFiscalAfterService = Arrays.asList(
                 notaFiscalRepository,
                 enviadorEmailService
         );
 
         GeradorDeNotaFiscalService geradorDeNotaFiscalService = new GeradorDeNotaFiscalService(listaNotaFiscalAfterService);
         geradorDeNotaFiscalService.gera(fatura);
-
     }
 }
