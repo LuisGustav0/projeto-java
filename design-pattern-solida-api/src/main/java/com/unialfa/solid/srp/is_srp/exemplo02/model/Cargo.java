@@ -1,5 +1,6 @@
-package com.unialfa.solid.srp.is_srp.exemplo02;
+package com.unialfa.solid.srp.is_srp.exemplo02.model;
 
+import com.unialfa.solid.srp.is_srp.exemplo02.enums.TipoCargoE;
 import lombok.Getter;
 import lombok.Setter;
 

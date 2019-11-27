@@ -1,25 +1,32 @@
-package com.unialfa.solid.ocp.not_ocp.exemplo02.test;
+package com.unialfa.solid.ocp.is_ocp.exemplo02.test;
 
-import com.unialfa.solid.ocp.not_ocp.exemplo02.model.Fatura;
-import com.unialfa.solid.ocp.not_ocp.exemplo02.dao.NotaFiscalDao;
-import com.unialfa.solid.ocp.not_ocp.exemplo02.services.EnviadorDeEmail;
-import com.unialfa.solid.ocp.not_ocp.exemplo02.services.GeradorDeNotaFiscal;
+import com.unialfa.solid.ocp.is_ocp.exemplo02.interfaces.INotaFiscalAfterService;
+import com.unialfa.solid.ocp.is_ocp.exemplo02.model.Fatura;
+import com.unialfa.solid.ocp.is_ocp.exemplo02.repository.NotaFiscalRepository;
+import com.unialfa.solid.ocp.is_ocp.exemplo02.services.EnviadorEmailService;
+import com.unialfa.solid.ocp.is_ocp.exemplo02.services.GeradorDeNotaFiscalService;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
+import java.util.List;
 
-public class GeradorDeNotaFiscalTest {
+public class GeradorDeNotaFiscalServiceTest {
 
     public static void main(String[] args) {
         Fatura fatura = new Fatura();
         fatura.setCliente("Luis Gustavo");
         fatura.setValorMensal(BigDecimal.valueOf(1600.0));
 
-        EnviadorDeEmail enviadorDeEmail = new EnviadorDeEmail();
-        NotaFiscalDao notaFiscalDao = new NotaFiscalDao();
+        NotaFiscalRepository notaFiscalRepository = new NotaFiscalRepository();
+        EnviadorEmailService enviadorEmailService = new EnviadorEmailService();
 
-        GeradorDeNotaFiscal geradorDeNotaFiscal = new GeradorDeNotaFiscal(enviadorDeEmail,
-                                                                          notaFiscalDao);
+        List<INotaFiscalAfterService> listaNotaFiscalAfterService = Arrays.asList(
+                notaFiscalRepository,
+                enviadorEmailService
+        );
 
-        geradorDeNotaFiscal.gera(fatura);
+        GeradorDeNotaFiscalService geradorDeNotaFiscalService = new GeradorDeNotaFiscalService(listaNotaFiscalAfterService);
+        geradorDeNotaFiscalService.gera(fatura);
+
     }
 }

@@ -1,8 +1,13 @@
-package com.unialfa.solid.srp.not_srp.exemplo02;
+package com.unialfa.solid.srp.not_srp.exemplo02.test;
+
+import com.unialfa.solid.srp.not_srp.exemplo02.enums.TipoCargoE;
+import com.unialfa.solid.srp.not_srp.exemplo02.model.Cargo;
+import com.unialfa.solid.srp.not_srp.exemplo02.model.Funcionario;
+import com.unialfa.solid.srp.not_srp.exemplo02.service.CalcularSalarioService;
 
 import java.math.BigDecimal;
 
-public class FuncionarioTest {
+public class CalcularSalarioServiceTest {
 
     private static Funcionario getFunconario(TipoCargoE tipoCargoE,
                                              BigDecimal salarioBase) {
@@ -17,10 +22,22 @@ public class FuncionarioTest {
     }
 
     private static void calcularSalario(Funcionario funcionario) {
-        CalculadoraDeSalario calculadoraDeSalario = new CalculadoraDeSalario();
+        CalcularSalarioService calculadoraDeSalario = new CalcularSalarioService();
         BigDecimal valorSalario = calculadoraDeSalario.calcula(funcionario);
 
         System.out.println(funcionario.getCargo().getTipoCargoE() + ": " + valorSalario);
+    }
+
+    private static void testeFuncionarioNaoExiste() {
+        try {
+            TipoCargoE tipoCargoE = null;
+
+            Funcionario funcionario = getFunconario(tipoCargoE, BigDecimal.valueOf(2200.0));
+
+            calcularSalario(funcionario);
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
     }
 
     private static void testeFuncionarioDesenvolvedor() {
@@ -46,23 +63,11 @@ public class FuncionarioTest {
 
         calcularSalario(funcionario);
     }
-
-    private static void testeFuncionarioNaoExiste() {
-        try {
-            TipoCargoE tipoCargoE = null;
-
-            Funcionario funcionario = getFunconario(tipoCargoE, BigDecimal.valueOf(2200.0));
-
-            calcularSalario(funcionario);
-        } catch (Exception e) {
-            System.err.println(e.getMessage());
-        }
-    }
-
+    
     public static void main(String[] args) {
+        testeFuncionarioNaoExiste();
         testeFuncionarioDesenvolvedor();
         testeFuncionarioDba();
         testeFuncionarioTester();
-        testeFuncionarioNaoExiste();
     }
 }

@@ -1,4 +1,4 @@
-package com.unialfa.solid.ocp.is_ocp.exemplo02;
+package com.unialfa.solid.ocp.is_ocp.exemplo02.model;
 
 import lombok.Getter;
 import lombok.Setter;

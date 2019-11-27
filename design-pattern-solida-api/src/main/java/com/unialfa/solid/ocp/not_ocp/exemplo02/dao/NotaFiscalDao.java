@@ -1,12 +1,10 @@
-package com.unialfa.solid.ocp.not_ocp.exemplo02.services;
+package com.unialfa.solid.ocp.not_ocp.exemplo02.dao;
 
-import com.unialfa.solid.ocp.is_ocp.exemplo02.model.NotaFiscal;
+import com.unialfa.solid.ocp.not_ocp.exemplo02.model.NotaFiscal;
 
 public class NotaFiscalDao {
 
     public void persiste(NotaFiscal notaFiscal) {
-        notaFiscal.setId(1);
-
-        System.out.println("Salvar nota fiscal no banco" + notaFiscal.getId());
+        System.out.println("Salvar nota fiscal no banco: " + notaFiscal.getId());
     }
 }

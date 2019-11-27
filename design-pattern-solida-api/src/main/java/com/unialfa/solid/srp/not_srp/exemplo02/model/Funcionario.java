@@ -1,4 +1,4 @@
-package com.unialfa.solid.srp.not_srp.exemplo02;
+package com.unialfa.solid.srp.not_srp.exemplo02.model;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,9 +1,13 @@
-package com.unialfa.solid.srp.is_srp.exemplo02;
+package com.unialfa.solid.srp.is_srp.exemplo02.service;
+
+import com.unialfa.solid.srp.is_srp.exemplo02.enums.TipoCargoE;
+import com.unialfa.solid.srp.is_srp.exemplo02.model.Cargo;
+import com.unialfa.solid.srp.is_srp.exemplo02.model.Funcionario;
 
 import java.math.BigDecimal;
 import java.util.Optional;
 
-public class CalculadoraDeSalario {
+public class CalcularSalarioService {
 
     public BigDecimal calcula(Funcionario funcionario) {
         TipoCargoE tipoCargoE = Optional.ofNullable(funcionario)

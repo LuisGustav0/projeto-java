@@ -1,10 +1,12 @@
-package com.unialfa.solid.srp.not_srp.exemplo02;
+package com.unialfa.solid.srp.not_srp.exemplo02.service;
 
+import com.unialfa.solid.srp.not_srp.exemplo02.model.Funcionario;
+import com.unialfa.solid.srp.not_srp.exemplo02.enums.TipoCargoE;
 import com.unialfa.util.UtilNumero;
 
 import java.math.BigDecimal;
 
-public class CalculadoraDeSalario {
+public class CalcularSalarioService {
 
     public BigDecimal calcula(Funcionario funcionario) {
         if (TipoCargoE.DESENVOLVEDOR.equals(funcionario.getCargo().getTipoCargoE())) {
