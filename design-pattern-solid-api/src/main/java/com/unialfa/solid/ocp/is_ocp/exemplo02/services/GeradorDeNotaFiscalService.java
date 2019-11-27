@@ -1,20 +1,22 @@
 package com.unialfa.solid.ocp.is_ocp.exemplo02.services;
 
-import com.unialfa.solid.ocp.is_ocp.exemplo02.interfaces.INotaFiscalGerarAfterService;
 import com.unialfa.solid.ocp.is_ocp.exemplo02.model.Fatura;
 import com.unialfa.solid.ocp.is_ocp.exemplo02.model.NotaFiscal;
+import com.unialfa.solid.ocp.is_ocp.exemplo02.repository.NotaFiscalRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
-import java.util.List;
 import java.util.Optional;
 
+@Service
 public class GeradorDeNotaFiscalService {
 
-    private List<INotaFiscalGerarAfterService> listaAcaoAposGerarNota;
+    @Autowired
+    private NotaFiscalRepository notaFiscalRepository;
 
-    public GeradorDeNotaFiscalService(List<INotaFiscalGerarAfterService> listaAcaoAposGerarNota) {
-        this.listaAcaoAposGerarNota = listaAcaoAposGerarNota;
-    }
+    @Autowired
+    private EnviadorEmailService enviadorEmailService;
 
     private BigDecimal getImpostoSimplesSobreO(BigDecimal valor) {
         return valor.multiply(BigDecimal.valueOf(0.06));
@@ -32,7 +34,8 @@ public class GeradorDeNotaFiscalService {
 
         NotaFiscal notaFiscal = new NotaFiscal(valor, imposto);
 
-        listaAcaoAposGerarNota.forEach(acaoAposGerarNota -> acaoAposGerarNota.executa(notaFiscal));
+        this.notaFiscalRepository.save(notaFiscal);
+        this.enviadorEmailService.enviar(notaFiscal);
 
         return notaFiscal;
     }
