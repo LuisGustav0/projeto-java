@@ -1,34 +1,37 @@
 package com.unialfa.solid.srp.not_srp.exemplo02;
 
+import com.unialfa.util.UtilNumero;
+
+import java.math.BigDecimal;
+
 public class CalculadoraDeSalario {
 
-
-    public double calcula(Funcionario funcionario) {
-        if (DESENVOLVEDOR.equals(funcionario.getCargo())) {
+    public BigDecimal calcula(Funcionario funcionario) {
+        if (TipoCargoE.DESENVOLVEDOR.equals(funcionario.getCargo().getTipoCargoE())) {
             return dezOuVintePorcento(funcionario);
         }
 
-        if (DBA.equals(funcionario.getCargo()) || TESTER.equals(funcionario.getCargo())) {
+        if (TipoCargoE.DBA.equals(funcionario.getCargo().getTipoCargoE()) ||
+                TipoCargoE.TESTER.equals(funcionario.getCargo().getTipoCargoE())) {
             return quinzeOuVinteCincoPorcento(funcionario);
         }
 
         throw new RuntimeException("funcionario invalido");
     }
 
-    private double dezOuVintePorcento(Funcionario funcionario) {
-        if (funcionario.getSalarioBase() > 3000.0) {
-            return funcionario.getSalarioBase() * 0.8;
+    private BigDecimal dezOuVintePorcento(Funcionario funcionario) {
+        if (UtilNumero.isValorMaior(funcionario.getSalarioBase(), BigDecimal.valueOf(3000.0))) {
+            return funcionario.getSalarioBase().multiply(BigDecimal.valueOf(0.8));
         } else {
-            return funcionario.getSalarioBase() * 0.9;
+            return funcionario.getSalarioBase().multiply(BigDecimal.valueOf(0.9));
         }
     }
 
-    private double quinzeOuVinteCincoPorcento(Funcionario funcionario) {
-        if (funcionario.getSalarioBase() > 2000.0) {
-            return funcionario.getSalarioBase() * 0.75;
+    private BigDecimal quinzeOuVinteCincoPorcento(Funcionario funcionario) {
+        if (UtilNumero.isValorMaior(funcionario.getSalarioBase(), BigDecimal.valueOf(2000.0))) {
+            return funcionario.getSalarioBase().multiply(BigDecimal.valueOf(0.75));
         } else {
-            return funcionario.getSalarioBase() * 0.85;
+            return funcionario.getSalarioBase().multiply(BigDecimal.valueOf(0.85));
         }
     }
-
 }

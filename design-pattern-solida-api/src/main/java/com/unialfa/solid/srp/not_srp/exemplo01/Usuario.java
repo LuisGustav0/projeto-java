@@ -1,4 +1,4 @@
-package com.unialfa.solid.srp.not_srp;
+package com.unialfa.solid.srp.not_srp.exemplo01;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

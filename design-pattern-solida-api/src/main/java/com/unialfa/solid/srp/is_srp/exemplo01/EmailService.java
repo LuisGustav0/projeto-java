@@ -1,4 +1,4 @@
-package com.unialfa.solid.srp.is_srp;
+package com.unialfa.solid.srp.is_srp.exemplo01;
 
 public class EmailService {
 
