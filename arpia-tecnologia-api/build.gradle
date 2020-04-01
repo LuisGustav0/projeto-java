@@ -7,8 +7,8 @@ plugins {
 group = 'com.arpia.tecnologia'
 version = '0.0.1-SNAPSHOT'
 
-sourceCompatibility = 11
-targetCompatibility = 11
+sourceCompatibility = 14
+targetCompatibility = 14
 
 repositories {
 	mavenCentral()
@@ -17,6 +17,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	compileOnly 'org.projectlombok:lombok:1.18.12'
 	compile group: 'net.jsunit', name: 'jsunit', version: '2.1.4'
 	compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
 	compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.9'
@@ -25,4 +27,11 @@ dependencies {
 	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.0.pr3'
 	compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.10.0.pr3'
 	compile group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
+	compile group: 'org.springframework', name: 'spring-web', version: '3.0.2.RELEASE'
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.3'
+
+	annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+	testCompileOnly 'org.projectlombok:lombok:1.18.12'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
 }

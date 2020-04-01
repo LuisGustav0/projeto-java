@@ -7,20 +7,20 @@ import org.modelmapper.PropertyMap;
 
 public class ExecutarTeste {
 
-  public static void main(String[] args) {
-    Cliente cliente = new Cliente("1", "Luis");
+    public static void main(String[] args) {
+        Cliente cliente = new Cliente("1", "Luis");
 
-    ModelMapper modelMapper = new ModelMapper();
-    Fornecedor fornecedor = modelMapper.map(cliente, Fornecedor.class);
-    modelMapper.addMappings(new PropertyMap<Fornecedor, Cliente>() {
+        ModelMapper modelMapper = new ModelMapper();
+        Fornecedor fornecedor = modelMapper.map(cliente, Fornecedor.class);
+        modelMapper.addMappings(new PropertyMap<Fornecedor, Cliente>() {
 
-      @Override
-      protected void configure() {
-        map().setCodigo(source.getId());
-        map().setNome(source.getDescricao());
-      }
-    });
+            @Override
+            protected void configure() {
+                map().setCodigo(source.getId());
+                map().setNome(source.getDescricao());
+            }
+        });
 
-    System.out.println(fornecedor);
-  }
+        System.out.println(fornecedor);
+    }
 }
