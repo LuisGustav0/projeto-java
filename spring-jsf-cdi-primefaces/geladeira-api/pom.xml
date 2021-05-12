@@ -46,7 +46,7 @@
 		<org.apache.xmlbeans.version>2.6.0</org.apache.xmlbeans.version>
 		
 		<!-- Spring Security (autenticação e autorização) -->
-		<org.springframework.security.version>4.1.3.RELEASE</org.springframework.security.version>
+		<org.springframework.security.version>5.2.10.RELEASE</org.springframework.security.version>
 		
 		<!-- Api de Servlet -->
 		<javax.servlet.version>3.1.0</javax.servlet.version>
