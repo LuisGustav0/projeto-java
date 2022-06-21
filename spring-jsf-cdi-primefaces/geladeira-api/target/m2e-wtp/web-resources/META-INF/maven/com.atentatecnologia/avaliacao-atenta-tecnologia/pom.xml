@@ -22,7 +22,7 @@
 		<org.hibernate.version>4.2.3.Final</org.hibernate.version>
 
 		<!-- MySQL Driver -->
-		<mysql.version>5.1.25</mysql.version>
+		<mysql.version>8.0.28</mysql.version>
 
 		<!-- Tema do Bootstrap -->
 		<org.primefaces.themes.verison>1.0.10</org.primefaces.themes.verison>
